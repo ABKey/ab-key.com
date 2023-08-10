@@ -78,71 +78,69 @@ export default function Contact() {
             </div>
           </div>
           {/* right side */}
-          <div className="w-full h-auto col-span-3 rounded-xl">
-            <div className="relative">
-              <div className="absolute rounded-xl -inset-0.5 bg-white opacity-5 md:opacity-40 blur"></div>
-              <div className="relative p-6 bg-black rounded-xl ">
-                <form action="" method="POST" encType="multipart/form-data">
-                  <div className="grid w-full gap-4 py-2 md:grid-cols-2">
-                    <div className="flex flex-col">
-                      <label className="py-2 text-sm uppercase">Name</label>
-                      <input
-                        className="flex p-3 bg-black rounded-lg ring-1 ring-white"
-                        type="text"
-                        name="name"
-                      />
-                    </div>
-                    <div className="flex flex-col">
-                      <label className="py-2 text-sm uppercase">
-                        Phone Number
-                      </label>
-                      <input
-                        className="flex p-3 bg-black rounded-lg ring-1 ring-white"
-                        type="text"
-                        name="phone"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col py-2">
-                    <label className="py-2 text-sm uppercase">Email</label>
-                    <input
-                      className="flex p-3 bg-black rounded-lg ring-1 ring-white"
-                      type="email"
-                      name="email"
-                    />
-                  </div>
-                  <div className="flex flex-col py-2">
-                    <label className="py-2 text-sm uppercase">Subject</label>
+          <div className="relative w-full h-auto col-span-3 rounded-xl">
+            <div className="absolute rounded-xl -inset-0.5 bg-white opacity-5 md:opacity-40 blur"></div>
+            <div className="relative p-6 bg-black rounded-xl ">
+              <form action="" method="POST" encType="multipart/form-data">
+                <div className="grid w-full gap-4 py-2 md:grid-cols-2">
+                  <div className="flex flex-col">
+                    <label className="py-2 text-sm uppercase">Name</label>
                     <input
                       className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                       type="text"
-                      name="subject"
+                      name="name"
                     />
                   </div>
-                  <div className="flex flex-col py-2">
-                    <label className="py-2 text-sm uppercase">Message</label>
-                    <textarea
-                      className="p-3 bg-black rounded-lg ring-1 ring-white"
-                      rows={10}
-                      name="message"
-                    ></textarea>
+                  <div className="flex flex-col">
+                    <label className="py-2 text-sm uppercase">
+                      Phone Number
+                    </label>
+                    <input
+                      className="flex p-3 bg-black rounded-lg ring-1 ring-white"
+                      type="text"
+                      name="phone"
+                    />
                   </div>
-                  <button className="w-full p-4 mt-4 ">Send Message</button>
-                </form>
-              </div>
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="py-2 text-sm uppercase">Email</label>
+                  <input
+                    className="flex p-3 bg-black rounded-lg ring-1 ring-white"
+                    type="email"
+                    name="email"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="py-2 text-sm uppercase">Subject</label>
+                  <input
+                    className="flex p-3 bg-black rounded-lg ring-1 ring-white"
+                    type="text"
+                    name="subject"
+                  />
+                </div>
+                <div className="flex flex-col py-2">
+                  <label className="py-2 text-sm uppercase">Message</label>
+                  <textarea
+                    className="p-3 bg-black rounded-lg ring-1 ring-white"
+                    rows={10}
+                    name="message"
+                  ></textarea>
+                </div>
+                <button className="w-full p-4 mt-4 ">Send Message</button>
+              </form>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <a href="/#home">
             <div className="p-4 ease-in rounded-full cursor-pointer hover:duration-300 active:scale-95 active:duration-50 hover:scale-110">
               <HiOutlineChevronDoubleUp
                 className="m-auto text-[#f7795a]"
                 size={30}
               />
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

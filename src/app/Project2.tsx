@@ -1,6 +1,6 @@
 export default function Project2() {
   return (
-    <div>
+    <>
       <head>
         <title>Flashcard Application</title>
         <meta
@@ -12,6 +12,6 @@ export default function Project2() {
       <body>
         <></>
       </body>
-    </div>
+    </>
   );
 }

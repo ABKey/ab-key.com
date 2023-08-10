@@ -1,6 +1,6 @@
 export default function Project1() {
   return (
-    <div>
+    <>
       <head>
         <title>Reservation Application</title>
         <meta
@@ -12,6 +12,6 @@ export default function Project1() {
       <body>
         <></>
       </body>
-    </div>
+    </>
   );
 }

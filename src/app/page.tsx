@@ -7,20 +7,12 @@ import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <div>
-      <head>
-        <title>Andy | Full-Stack Developer</title>
-        <meta
-          name="description"
-          content="Full-Stack Developer specializing in JavaScript and TypeScript frameworks."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+    <>
       <Main />
       <About />
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }

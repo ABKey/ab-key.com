@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 export default function Navbar() {
@@ -14,35 +13,54 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#030303]">
+    <>
+    <header className="fixed w-full h-20 shadow-xl z-[100] bg-[#030303]">
       <div className="flex items-center justify-between h-full px-2 mt-1 2xl:px-16">
         <Image
-          src="/../public/assets/MyLogo.png"
+          src="/assets/MyLogo.png"
           alt="/"
           width={100}
           height={100}
         />
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+            <li>
+              <a href="/#home" className="ml-10 text-sm uppercase hover:border-b">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#about"
+                className="ml-10 text-sm uppercase hover:border-b"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#skills"
+                className="ml-10 text-sm uppercase hover:border-b"
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#projects"
+                className="ml-10 text-sm uppercase hover:border-b"
+              >
                 Projects
-              </li>
-            </Link>
-            <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#contact"
+                className="ml-10 text-sm uppercase hover:border-b"
+              >
                 Contact
-              </li>
-            </Link>
+              </a>
+            </li>
           </ul>
           <div onClick={handleNavbar} className="md:hidden">
             <AiOutlineMenu size={25} />
@@ -67,10 +85,10 @@ export default function Navbar() {
           <div>
             <div className="flex items-center justify-between w-full">
               <Image
-                src="/../public/assets/MyLogo.png"
+                src="/assets/MyLogo.png"
                 alt="/"
-                width="87"
-                height="35"
+                width="0"
+                height="0"
               />
               <div className="relative">
                 <div className="absolute rounded-full -inset-0.5 bg-white opacity-25 blur"></div>
@@ -84,21 +102,31 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col py-4 text-white md:block">
               <ul className="uppercase">
-                <Link href="/">
-                  <li className="py-4 text-sm">Home</li>
-                </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">About</li>
-                </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">Skills</li>
-                </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">Projects</li>
-                </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">Contact</li>
-                </Link>
+                <a href="/#home">
+                  <li className="py-4 text-sm" >
+                    Home
+                  </li>
+                </a>
+                <a href="/#about">
+                  <li className="py-4 text-sm" >
+                    About
+                  </li>
+                </a>
+                <a href="/#skills">
+                  <li className="py-4 text-sm" >
+                    Skills
+                  </li>
+                </a>
+                <a href="/#projects">
+                  <li className="py-4 text-sm" >
+                    Projects
+                  </li>
+                </a>
+                <a href="/#contact">
+                  <li className="py-4 text-sm" >
+                    Contact
+                  </li>
+                </a>
               </ul>
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#f7795a]">
@@ -106,7 +134,7 @@ export default function Navbar() {
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                   <div className="p-3 ring-1 ring-[#464646] bg-black duration-50 ease-in rounded-full shadow-lg cursor-pointer active:scale-95">
-                    <FaLinkedinIn />
+                    <FaLinkedin />
                   </div>
                   <div className="p-3 ring-1 ring-[#464646] bg-black duration-50 ease-in rounded-full shadow-lg cursor-pointer active:scale-95">
                     <FaGithub />
@@ -123,6 +151,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
+    </>
   );
 }

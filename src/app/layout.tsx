@@ -16,7 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
+      <head>
+        <title>Andy | Full-Stack Developer</title>
+        <meta
+          name="description"
+          content="Full-Stack Developer specializing in JavaScript and TypeScript frameworks."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
