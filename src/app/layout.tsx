@@ -23,7 +23,7 @@ export default function RootLayout({
           name="description"
           content="Full-Stack Developer specializing in JavaScript and TypeScript frameworks."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="assets/MyLogo.png" />
       </head>
       <body className={inter.className}>
         <Navbar />

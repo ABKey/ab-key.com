@@ -102,27 +102,27 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col py-4 text-white md:block">
               <ul className="uppercase">
-                <a href="/#home">
+                <a onClick={()=> setNavbar(false)} href="/#home">
                   <li className="py-4 text-sm" >
                     Home
                   </li>
                 </a>
-                <a href="/#about">
+                <a onClick={()=> setNavbar(false)} href="/#about">
                   <li className="py-4 text-sm" >
                     About
                   </li>
                 </a>
-                <a href="/#skills">
+                <a onClick={()=> setNavbar(false)} href="/#skills">
                   <li className="py-4 text-sm" >
                     Skills
                   </li>
                 </a>
-                <a href="/#projects">
+                <a onClick={()=> setNavbar(false)} href="/#projects">
                   <li className="py-4 text-sm" >
                     Projects
                   </li>
                 </a>
-                <a href="/#contact">
+                <a onClick={()=> setNavbar(false)} href="/#contact">
                   <li className="py-4 text-sm" >
                     Contact
                   </li>

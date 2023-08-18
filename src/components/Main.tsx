@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Router from "next/router";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -9,20 +10,13 @@ export default function Main() {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="text-sm tracking-widest text-gray-100 uppercase">
-            moto
-          </p>
           <h1 className="text-gray-100">
-            Hi, I'm <span className="text-[#f7795a]">Andy</span>
+            Hello, I'm <span className="text-[#f7795a]">Andy</span>
           </h1>
           <h1 className="py-2 text-gray-100">Full-Stack Developer</h1>
           <p className="py-4 text-gray-200 max-w-[70%] m-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            repellendus in. Autem accusamus impedit at sapiente provident
-            veritatis suscipit odio veniam facere tempore architecto porro velit
-            ipsam ex esse amet, obcaecati maxime, minima quisquam voluptate iste
-            labore soluta rem! Consectetur?
-          </p>
+          I enjoy building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build pixel-perfect, performant experiences. I'm always looking for new opportunities, so feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+          </p> 
 
           <div className="flex items-center justify-between max-w-[600px] m-auto py-4">
             <a
@@ -53,7 +47,7 @@ export default function Main() {
                 </div>
               </div>
             </a>
-            <a href="" target="" rel="noreferrer">
+            <a href="/resume" target="" rel="noreferrer">
               <div className="relative group">
                 <div className="absolute rounded-full opacity-75 -inset-0.5 md:-inset-1 bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 blur group-hover:animate-pulse"></div>
                 <div className="relative flex items-center justify-center p-6 duration-300 ease-in bg-black rounded-full cursor-pointer md:p-7">

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import ProjectItem from "./ProjectItem";
 
@@ -18,13 +16,13 @@ export default function Projects() {
           <ProjectItem
             title="Reservation Application"
             backgroundImg={reservationImg}
-            projectUrl="/https://project-restaurant-reservation-fe.onrender.com"
+            projectUrl="reservation-project"
             
           />
           <ProjectItem
             title="Flashcard Application"
             backgroundImg={flashcardsImg}
-            projectUrl=""
+            projectUrl="flashcard-project"
           />
         </div>
       </div>

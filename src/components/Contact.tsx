@@ -1,11 +1,26 @@
+"use client";
+import Router from "next/router";
 import React from "react";
-import Link from "next/link";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 export default function Contact() {
+  const [form, setForm] = React.useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const onChangeHandler = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -19,13 +34,13 @@ export default function Contact() {
             <div className="h-full lg:px-4">
               <div className="relative h-full">
                 <div className="absolute rounded-xl -inset-0.5 bg-white opacity-5 md:opacity-40 blur"></div>
-                <div className="relative h-full p-6 bg-black rounded-xl">
+                <div className="relative flex flex-col justify-between h-full p-6 bg-black rounded-xl">
                   <div>
                     <h2 className="py-2">Andres Baker</h2>
                     <p>Full-Stack Developer</p>
                     <p className="py-4">
-                      I am available for freelance or full-time positions. Get
-                      in contact and let&apos;s chat.
+                      I am available for freelance or full-time opportunities.
+                      Get in contact and let&apos;s chat.
                     </p>
                   </div>
                   <div>
@@ -63,7 +78,7 @@ export default function Contact() {
                           </div>
                         </div>
                       </a>
-                      <a href="" target="" rel="noreferrer">
+                      <a href="/resume" target="" rel="noreferrer">
                         <div className="relative group">
                           <div className="absolute rounded-lg opacity-50 -inset-0.5 bg-gradient-to-r duration-300 ease-in from-yellow-600 via-orange-600 to-red-600 group-hover:scale-105"></div>
                           <div className="relative flex items-center justify-center p-6 duration-300 ease-in bg-black rounded-lg cursor-pointer group-hover:scale-105">
@@ -89,6 +104,8 @@ export default function Contact() {
                       className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                       type="text"
                       name="name"
+                      onChange={onChangeHandler}
+                      value={form.name}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -99,6 +116,8 @@ export default function Contact() {
                       className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                       type="text"
                       name="phone"
+                      onChange={onChangeHandler}
+                      value={form.phone}
                     />
                   </div>
                 </div>
@@ -108,6 +127,8 @@ export default function Contact() {
                     className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                     type="email"
                     name="email"
+                    onChange={onChangeHandler}
+                    value={form.email}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -116,6 +137,8 @@ export default function Contact() {
                     className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                     type="text"
                     name="subject"
+                    onChange={onChangeHandler}
+                    value={form.subject}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -124,9 +147,11 @@ export default function Contact() {
                     className="p-3 bg-black rounded-lg ring-1 ring-white"
                     rows={10}
                     name="message"
+                    onChange={onChangeHandler}
+                    value={form.message}
                   ></textarea>
                 </div>
-                <button className="w-full p-4 mt-4 ">Send Message</button>
+                <button className="w-full p-4 mt-4">Send Message</button>
               </form>
             </div>
           </div>
