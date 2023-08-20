@@ -11,11 +11,11 @@ export default function Main() {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="text-gray-100">
-            Hello, I'm <span className="text-[#f7795a]">Andy</span>
+            Hello, I&apos;m <span className="text-[#f7795a]">Andy</span>
           </h1>
           <h1 className="py-2 text-gray-100">Full-Stack Developer</h1>
           <p className="py-4 text-gray-200 max-w-[70%] m-auto">
-          I enjoy building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build pixel-perfect, performant experiences. I'm always looking for new opportunities, so feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+          I enjoy building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build pixel-perfect, performant experiences. I&apos;m always looking for new opportunities, so feel free to reach out if you&apos;re looking for a developer, have a question, or just want to connect.
           </p> 
 
           <div className="flex items-center justify-between max-w-[600px] m-auto py-4">

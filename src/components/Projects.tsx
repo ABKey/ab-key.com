@@ -11,7 +11,7 @@ export default function Projects() {
         <p className="uppercase text-xl tracking-widest text-[#f7795a]">
           Projects
         </p>
-        <h2 className="py-4">What I've built</h2>
+        <h2 className="py-4">What I&apos;ve built</h2>
         <div className="grid gap-8 md:grid-cols-2">
           <ProjectItem
             title="Reservation Application"

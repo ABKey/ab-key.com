@@ -13,16 +13,16 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-200">
-            I'm a sound engineer turned software engineer based out of Phoenix,
-            Arizona. I have a love for building things and solving problems. I'm
+            I&apos;m a sound engineer turned software engineer based out of Phoenix,
+            Arizona. I have a love for building things and solving problems. I&apos;m
             currently working as a freelancer while I hone my skills in new
-            stacks and frameworks. I'm also taking on side projects to help me learn and grow as
+            stacks and frameworks. I&apos;m also taking on side projects to help me learn and grow as
             a developer.
           </p>
           <p className="py-4">
             My professional focus is making an impact in the field of software
-            engineering. I'm passionate about building products that make a
-            difference in peoples' lives.
+            engineering. I&apos;m passionate about building products that make a
+            difference in peoples&apos; lives.
           </p>
           <p className="py-2 text-gray-200 underline cursor-pointer">
             <a href="/#projects">
