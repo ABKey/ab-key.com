@@ -21,6 +21,9 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+  }
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -70,7 +73,11 @@ export default function Contact() {
                           </div>
                         </div>
                       </a>
-                      <a href="" target="" rel="noreferrer">
+                      <a
+                        href="mailto:andresbakerv@outlook.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <div className="relative group">
                           <div className="absolute rounded-lg opacity-50 -inset-0.5 bg-gradient-to-r duration-300 ease-in from-yellow-600 via-orange-600 to-red-600 group-hover:scale-105"></div>
                           <div className="relative flex items-center justify-center p-6 duration-300 ease-in bg-black rounded-lg cursor-pointer group-hover:scale-105">
@@ -78,7 +85,11 @@ export default function Contact() {
                           </div>
                         </div>
                       </a>
-                      <a href="/resume" target="" rel="noreferrer">
+                      <a
+                        href="https://drive.google.com/file/d/1T5RMbD72KAZXD8r_2L8_YM2G9iB6xyFK/view?usp=drive_link"
+                        target=""
+                        rel="noreferrer"
+                      >
                         <div className="relative group">
                           <div className="absolute rounded-lg opacity-50 -inset-0.5 bg-gradient-to-r duration-300 ease-in from-yellow-600 via-orange-600 to-red-600 group-hover:scale-105"></div>
                           <div className="relative flex items-center justify-center p-6 duration-300 ease-in bg-black rounded-lg cursor-pointer group-hover:scale-105">
@@ -96,7 +107,11 @@ export default function Contact() {
           <div className="relative w-full h-auto col-span-3 rounded-xl">
             <div className="absolute rounded-xl -inset-0.5 bg-white opacity-5 md:opacity-40 blur"></div>
             <div className="relative p-6 bg-black rounded-xl ">
-              <form action="" method="POST" encType="multipart/form-data">
+              <form
+                action="https://getform.io/f/c1e94f24-67e2-4569-99bf-92bbba80faa5"
+                method="POST"
+                encType="multipart/form-data"
+              >
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
                     <label className="py-2 text-sm uppercase">Name</label>
@@ -104,6 +119,7 @@ export default function Contact() {
                       className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                       type="text"
                       name="name"
+                      maxLength={100}
                       onChange={onChangeHandler}
                       value={form.name}
                     />
@@ -114,8 +130,10 @@ export default function Contact() {
                     </label>
                     <input
                       className="flex p-3 bg-black rounded-lg ring-1 ring-white"
-                      type="text"
+                      type="tel"
                       name="phone"
+                      minLength={10}
+                      maxLength={13}
                       onChange={onChangeHandler}
                       value={form.phone}
                     />
@@ -127,6 +145,7 @@ export default function Contact() {
                     className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                     type="email"
                     name="email"
+                    maxLength={100}
                     onChange={onChangeHandler}
                     value={form.email}
                   />
@@ -137,6 +156,7 @@ export default function Contact() {
                     className="flex p-3 bg-black rounded-lg ring-1 ring-white"
                     type="text"
                     name="subject"
+                    maxLength={100}
                     onChange={onChangeHandler}
                     value={form.subject}
                   />
@@ -151,7 +171,7 @@ export default function Contact() {
                     value={form.message}
                   ></textarea>
                 </div>
-                <button className="w-full p-4 mt-4">Send Message</button>
+                <button type="submit" className="w-full p-4 mt-4">Send Message</button>
               </form>
             </div>
           </div>

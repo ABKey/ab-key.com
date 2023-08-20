@@ -30,9 +30,8 @@ export default function About() {
             </a>
           </p>
         </div>
-        <div className="relative flex items-center justify-center w-full h-auto duration-300 ease-in cursor-pointer hover:scale-105">
-          <div className="absolute rounded-xl -inset-0.5 bg-white opacity-25 blur"></div>
-          <div className="relative w-full h-auto bg-black rounded-xl ring-1 ring-white ">
+        <div className="flex items-center justify-center w-full h-auto duration-300 ease-in cursor-pointer hover:scale-105">
+          <div className=" bg-black rounded-xl ring-1 ring-white ">
             <Image
               className="w-full h-auto rounded-xl"
               src={headshotImg}
